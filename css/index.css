@@ -82,6 +82,12 @@ header .header-background{
     text-align: center;
 }
 
+#news:hover {
+    color: var(--main-color);
+    border: 1px solid transparent;
+    background-color: #534b89;
+}
+
 main .news-list .news-list-block img{
     width:100%;
     display: block;
@@ -102,7 +108,7 @@ main .news-list article{
 }
 
 @media (min-width: 500px) {
-    .news-list {
+    main .news-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 5px;
@@ -110,13 +116,13 @@ main .news-list article{
 }
 
 @media (min-width: 660px) {
-    .news-list {
-        grid-template-columns: 1fr 1fr;
+    main .news-list {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media (max-width: 980px) {
-    .news-list {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+@media (min-width: 980px) {
+    main .news-list {
+        grid-template-columns: 1fr;
     }
 }
