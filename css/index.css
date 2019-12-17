@@ -74,7 +74,7 @@ header .header-background{
     color: #202020;
 }
 
-#news, #results{
+#news, #results, #headers-after-news{
     border: 1px solid #bae8e8;
     background-color:#26213f;
     color:#bae8e8;
@@ -82,18 +82,33 @@ header .header-background{
     text-align: center;
 }
 
-#news:hover, #results:hover {
+#news:hover, #results:hover, #headers-after-news:hover {
     color: var(--main-color);
     border: 1px solid transparent;
     background-color: #534b89;
 }
 
-main .news-list .news-list-block img{
+main  .news-list .news-list-block img{
     width:100%;
     display: block;
 }
+main  .news-text-with-photo .news-text-with-photo-block img{
+    width:100%;
+    display: block;
+    alt:"west ham"; 
+     height:"270";
+}
 
-main .news-list{
+main .news-text-with-photo{
+        color:#bae8e8;
+        text-align: center;
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:100px;
+}
+
+main .news-list {
     color:#bae8e8;
     text-align: center;
     font-size: 1.5rem;
@@ -102,9 +117,35 @@ main .news-list{
     grid-gap: 20px;
 }
 
+main .news-text-with-photo article{
+     border: 1px solid #bae8e8;
+     margin: 5px;
+}
+
 main .news-list article{
     border: 1px solid #bae8e8;
     padding: 10px;
+}
+
+.results-json{
+    color:#bae8e8;
+    text-align: center;
+}
+
+.league-name{
+       color:#bae8e8;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#table-leaderboards{
+    color:#bae8e8;
+    width:100%;
+    text-align:center;
+}
+
+table, th, td {
+  border: 1px solid #bae8e8;
 }
 
 @media (min-width: 500px) {
@@ -113,16 +154,30 @@ main .news-list article{
         grid-template-columns: 1fr 1fr;
         grid-gap: 5px;
     }
+
+     main .news-text-with-photo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1px;
+    }
 }
 
 @media (min-width: 660px) {
-    main .news-list {
+    main .news-list  {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    main .news-text-with-photo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1px;
     }
 }
 
 @media (min-width: 980px) {
-    main .news-list {
+    main .news-list  {
         grid-template-columns: 1fr;
+    }
+    main .news-text-with-photo{
+        grid-template-columns: 1fr 1fr;
     }
 }
