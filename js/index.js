@@ -7,9 +7,9 @@ function getJsonAjax() {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             const jsonData = JSON.parse(xhr.responseText);
-            document.querySelector('.home-team').innerText = jsonData.data.match.home_name;
-            document.querySelector('.away-team').innerText = jsonData.data.match.away_name;
-            document.querySelector('.score').innerText = jsonData.data.match.ft_score;
+            document.querySelector('.home-team').innerText = jsonData.data.match[0].home_name;
+            document.querySelector('.away-team').innerText = jsonData.data.match[0].away_name;
+            document.querySelector('.score').innerText = jsonData.data.match[0].ft_score;
         }
     }
     xhr.open('GET', 'live-scores.json', true);
