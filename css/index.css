@@ -19,7 +19,6 @@ header .logo {
     text-align: center;
     margin: 1rem 0;
     color: #bae8e8;
-    
 }
 
 header nav .menu {
@@ -49,7 +48,6 @@ header nav .menu a:hover {
         display: flex;
         align-items: center;
     }
-
     header .menu {
         flex: 1;
     }
@@ -74,7 +72,7 @@ header .header-background{
     color: #202020;
 }
 
-#news, #results, #headers-after-news{
+#news, #results, #headers-after-news, #links{
     border: 1px solid #bae8e8;
     background-color:#26213f;
     color:#bae8e8;
@@ -92,11 +90,12 @@ main  .news-list .news-list-block img{
     width:100%;
     display: block;
 }
+
 main  .news-text-with-photo .news-text-with-photo-block img{
     width:100%;
     display: block;
     alt:"west ham"; 
-     height:"270";
+    height:"270";
 }
 
 main .news-text-with-photo{
@@ -133,7 +132,7 @@ main .news-list article{
 }
 
 .league-name{
-       color:#bae8e8;
+    color:#bae8e8;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -146,6 +145,32 @@ main .news-list article{
 
 table, th, td {
   border: 1px solid #bae8e8;
+}
+
+#scrollToTop{
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: 1px solid #bae8e8; 
+  outline: none; 
+  background-color: #26213f; 
+  color: #bae8e8; 
+  cursor: pointer; 
+  padding: 15px; 
+  font-size: 18px; 
+}
+
+#scrollToTop:hover {
+    background-color: #534b89; 
+}
+
+#div-footer img{
+    width:350px;
+    height:80px;
+    display: block;
+    margin: auto;
 }
 
 @media (min-width: 500px) {
