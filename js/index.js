@@ -1,15 +1,21 @@
 const apiUrl = 'https://livescore-api.com/api-client/scores/live.json?key=YA5ic0spiVXTxapK&secret=250T7JCp9KMi8IU7jZpv0SUiNSbl3B66';
+let rowIndex = 0;
+let cellIndex = 0;
 
-const btnGetJsonAjax = document.querySelector('.get-json-ajax');
-btnGetJsonAjax.addEventListener('click', getJsonAjax);
 function getJsonAjax() {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             const jsonData = JSON.parse(xhr.responseText);
-            document.querySelector('.home-team').innerText = jsonData.data.match[0].home_name;
-            document.querySelector('.away-team').innerText = jsonData.data.match[0].away_name;
-            document.querySelector('.score').innerText = jsonData.data.match[0].ft_score;
+            for (let i = 0; i < 5; i++) {
+                document.getElementById('table-results').rows[i].cells[cellIndex].innerHTML = jsonData.data.match[i].home_name;
+            }
+            for (let i = 0; i < 5; i++) {
+                document.getElementById('table-results').rows[i].cells[cellIndex + 1].innerHTML = jsonData.data.match[i].score;
+            }
+            for (let i = 0; i < 5; i++) {
+                document.getElementById('table-results').rows[i].cells[cellIndex + 2].innerHTML = jsonData.data.match[i].away_name;
+            }
         }
     }
     xhr.open('GET', 'live-scores.json', true);

@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body onload="getJsonAjax()">
 	<header>
 
 		<nav>
@@ -52,61 +52,48 @@
 				<p>Ibrahimovich appears to reveal his next club</p>
 			</article>
 		</div>
-		</br>
+		<br>
 
 		<div class="news-text-with-photo">
 			<article class="news-text-with-photo-block">
-				<img src="img/west-ham.jpg" >
+				<img src="img/west-ham.jpg" alt="west-ham" >
 				<p>'The game wasn't easy'</p>
 			</article>
 			<article class="news-text-with-photo-block">
-				<img src="img/west-ham.jpg">
+				<img src="img/west-ham.jpg" alt="west-ham">
 				<p>'The game wasn't easy'</p>
 			</article>
 		</div>
 		<section class="results-json">
 			<h2 id="results">Fixtures & Results</h2>
-			<p>Home team: <span class="home-team"></span></p>
-			<p>Score: <span class="score"></span></p>
-			<p>Away team: <span class="away-team"></span></p>
-			<button class="get-json-ajax">Get results</button>
-		</section>
-
-		<!-- <div id="results">
-			<p class="headers-after-news">Fixtures & Results</p>
 			<table id="table-results">
 				<tr>
-					<td>Man City</td>
-					<td>22:00</td>
-					<td>Sh Donetsk</td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
-					<td>Galatasaray</td>
-					<td>1-0</td>
-					<td>Club Brugge</td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
-					<td>Man City</td>
-					<td>22:00</td>
-					<td>Sh Donetsk</td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
-					<td>Man City</td>
-					<td>22:00</td>
-					<td>Sh Donetsk</td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
-					<td>Galatasaray</td>
-					<td>1-0</td>
-					<td>Club Brugge</td>
-				</tr>
-				<tr>
-					<td>Man City</td>
-					<td>22:00</td>
-					<td>Sh Donetsk</td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 			</table>
-		</div> -->
+		</section>
 
 		<div id="leaderboards">
 			<h2 id="headers-after-news">Leaderboards</h2>
@@ -149,7 +136,7 @@
 				</tr>
 			</table>
 		</div>
-		</br>
+		<br>
 	</main>
 
 	<footer>
@@ -157,7 +144,7 @@
 		<div id="div-footer">
 			<img src="img/social-networks.png" alt="social networks"  >
 			</div>
-			</br>
+			<br>
 	</footer>
 	<button onclick="topFunction()" id="scrollToTop" title="Go to top">To Top</button>
 

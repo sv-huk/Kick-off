@@ -94,8 +94,7 @@ main  .news-list .news-list-block img{
 main  .news-text-with-photo .news-text-with-photo-block img{
     width:100%;
     display: block;
-    alt:"west ham"; 
-    height:"270";
+    height:270px;
 }
 
 main .news-text-with-photo{
@@ -137,14 +136,28 @@ main .news-list article{
     font-size: 1.2rem;
 }
 
-#table-leaderboards{
+#table-leaderboards, #table-results{
     color:#bae8e8;
-    width:100%;
+    width:100%;    
     text-align:center;
+
 }
 
-table, th, td {
+table, th {
   border: 1px solid #bae8e8;
+  color:#bae8e8;
+}
+ td {
+  border: 1px solid #bae8e8;
+  /* width: 410px; */
+}
+td+td {
+  width: auto;
+} 
+
+#table-results{
+    padding: 5px;
+    font-size: 1.5rem;
 }
 
 #scrollToTop{
@@ -185,6 +198,7 @@ table, th, td {
         grid-template-columns: 1fr;
         grid-gap: 1px;
     }
+
 }
 
 @media (min-width: 660px) {
@@ -198,6 +212,7 @@ table, th, td {
     }
 }
 
+
 @media (min-width: 980px) {
     main .news-list  {
         grid-template-columns: 1fr;
@@ -205,4 +220,15 @@ table, th, td {
     main .news-text-with-photo{
         grid-template-columns: 1fr 1fr;
     }
+    main table, th {
+    border: 1px solid #bae8e8;
+    color:#bae8e8;
+}
+    main td {
+    border: 1px solid #bae8e8;
+    width: 410px;
+}
+    main td+td {
+    width: auto;
+}
 }
