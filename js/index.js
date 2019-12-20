@@ -16,9 +16,46 @@ function getJsonAjax() {
             for (let i = 0; i < 5; i++) {
                 document.getElementById('table-results').rows[i].cells[cellIndex + 2].innerHTML = jsonData.data.match[i].away_name;
             }
+            document.getElementById("matchInfo1").onclick = function () {
+                alert("Status - " + jsonData.data.match[0].status.toLowerCase() + "\nLocation - " + jsonData.data.match[0].location + "\nCompetition - " + jsonData.data.match[0].competition_name);
+            }
+            document.getElementById("matchInfo2").onclick = function () {
+                alert("Status - " + jsonData.data.match[1].status.toLowerCase() + "\nLocation - " + jsonData.data.match[1].location + "\nCompetition - " + jsonData.data.match[1].competition_name);
+            }
+            document.getElementById("matchInfo3").onclick = function () {
+                alert("Status - " + jsonData.data.match[2].status.toLowerCase() + "\nLocation - " + jsonData.data.match[2].location + "\nCompetition - " + jsonData.data.match[2].competition_name);
+            }
+            document.getElementById("matchInfo4").onclick = function () {
+                alert("Status - " + jsonData.data.match[3].status.toLowerCase() + "\nLocation - " + jsonData.data.match[3].location + "\nCompetition - " + jsonData.data.match[3].competition_name + "\ntime - " + jsonData.data.match[3].time + " min");
+            }
+            document.getElementById("matchInfo5").onclick = function () {
+                alert("Status - " + jsonData.data.match[4].status.toLowerCase() + "\nLocation - " + jsonData.data.match[4].location + "\nCompetition - " + jsonData.data.match[4].competition_name + "\ntime - " + jsonData.data.match[4].time + " min");
+            }
         }
     }
     xhr.open('GET', 'live-scores.json', true);
+    xhr.send();
+}
+function getJsonAjax2() {
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            const jsonData = JSON.parse(xhr.responseText);
+            for (let i = 0; i < 4; i++) {
+                document.getElementById('table-leaderboards').rows[i + 1].cells[cellIndex + 1].innerHTML = jsonData.data.team[i].team_name;
+            }
+            for (let i = 0; i < 4; i++) {
+                document.getElementById('table-leaderboards').rows[i + 1].cells[cellIndex + 2].innerHTML = jsonData.data.team[i].games_played;
+            }
+            for (let i = 0; i < 4; i++) {
+                document.getElementById('table-leaderboards').rows[i + 1].cells[cellIndex + 3].innerHTML = jsonData.data.team[i].goal_dif;
+            }
+            for (let i = 0; i < 4; i++) {
+                document.getElementById('table-leaderboards').rows[i + 1].cells[cellIndex + 4].innerHTML = jsonData.data.team[i].points;
+            }
+        }
+    }
+    xhr.open('GET', 'leaderboards.json', true);
     xhr.send();
 }
 

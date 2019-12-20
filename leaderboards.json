@@ -1,0 +1,34 @@
+{
+    "data": {
+        "team": [
+            {
+                "team_position": 1,
+                "team_name": "Liverpool",
+                "games_played": 17,
+                "goal_dif": 28,
+                "points": 49
+            },
+            {
+                "team_position": 2,
+                "team_name": "Leicester City",
+                "games_played": 17,
+                "goal_dif": 29,
+                "points": 39
+            },
+            {
+                "team_position": 3,
+                "team_name": "Man City",
+                "games_played": 17,
+                "goal_dif": 26,
+                "points": 35
+            },
+            {
+                "team_position": 4,
+                "team_name": "Chelsea",
+                "games_played": 17,
+                "goal_dif": 7,
+                "points": 29
+            }
+        ]
+    }
+}

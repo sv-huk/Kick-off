@@ -9,7 +9,7 @@
                 "league_name": "",
                 "location": "Al-Saada Stadium",
                 "ht_score": "1 - 2",
-                "competition_name": "",
+                "competition_name": "Saudi Professional League",
                 "league_id": 0,
                 "added": "2019-12-17 12:55:04",
                 "home_id": 3654,
@@ -29,7 +29,7 @@
                     "extra_time": null
                 }
             },
-             {
+            {
                 "status": "FINISHED",
                 "events": "https:\/\/livescore-api.com\/api-client\/scores\/events.json?key=YA5ic0spiVXTxapK&amp;secret=250T7JCp9KMi8IU7jZpv0SUiNSbl3B66&amp;id=177518",
                 "scheduled": "19:45",
@@ -85,62 +85,62 @@
                     "extra_time": null
                 }
             },
-                  {
-        "status": "IN PLAY",
-        "events": "https:\/\/livescore-api.com\/api-client\/scores\/events.json?key=YA5ic0spiVXTxapK&amp;secret=250T7JCp9KMi8IU7jZpv0SUiNSbl3B66&amp;id=177533",
-        "scheduled": "22:15",
-        "ft_score": "",
-        "league_name": "Primera Division:: clausura",
-        "location": "Estadio F\u00e9lix Capriles",
-        "ht_score": "0 - 0",
-        "competition_name": "Primera Division",
-        "league_id": 379,
-        "added": "2019-12-18 22:00:03",
-        "home_id": 2808,
-        "home_name": "Aurora",
-        "score": "0 - 0",
-        "id": 177533,
-        "et_score": "",
-        "time": "87",
-        "competition_id": 52,
-        "away_name": "Real Potosi",
-        "fixture_id": 0,
-        "last_changed": "2019-12-18 23:57:02",
-        "away_id": 277,
-        "outcomes": {
-          "half_time": "X",
-          "full_time": null,
-          "extra_time": null
-        }
-      },
-      {
-        "status": "IN PLAY",
-        "events": "https:\/\/livescore-api.com\/api-client\/scores\/events.json?key=YA5ic0spiVXTxapK&amp;secret=250T7JCp9KMi8IU7jZpv0SUiNSbl3B66&amp;id=177534",
-        "scheduled": "22:15",
-        "ft_score": "",
-        "league_name": "Primera Division:: clausura",
-        "location": "Estadio Jes\u00fas Berm\u00fadez",
-        "ht_score": "1 - 2",
-        "competition_name": "Primera Division",
-        "league_id": 379,
-        "added": "2019-12-18 22:00:03",
-        "home_id": 1293,
-        "home_name": "San Jose",
-        "score": "2 - 3",
-        "id": 177534,
-        "et_score": "",
-        "time": "79",
-        "competition_id": 52,
-        "away_name": "Always Ready",
-        "fixture_id": 0,
-        "last_changed": "2019-12-18 23:57:02",
-        "away_id": 4005,
-        "outcomes": {
-          "half_time": "2",
-          "full_time": null,
-          "extra_time": null
-        }
-      }
+            {
+                "status": "IN PLAY",
+                "events": "https:\/\/livescore-api.com\/api-client\/scores\/events.json?key=YA5ic0spiVXTxapK&amp;secret=250T7JCp9KMi8IU7jZpv0SUiNSbl3B66&amp;id=177533",
+                "scheduled": "22:15",
+                "ft_score": "",
+                "league_name": "Primera Division:: clausura",
+                "location": "Estadio F\u00e9lix Capriles",
+                "ht_score": "0 - 0",
+                "competition_name": "Primera Division",
+                "league_id": 379,
+                "added": "2019-12-18 22:00:03",
+                "home_id": 2808,
+                "home_name": "Aurora",
+                "score": "0 - 0",
+                "id": 177533,
+                "et_score": "",
+                "time": "87",
+                "competition_id": 52,
+                "away_name": "Real Potosi",
+                "fixture_id": 0,
+                "last_changed": "2019-12-18 23:57:02",
+                "away_id": 277,
+                "outcomes": {
+                    "half_time": "X",
+                    "full_time": null,
+                    "extra_time": null
+                }
+            },
+            {
+                "status": "IN PLAY",
+                "events": "https:\/\/livescore-api.com\/api-client\/scores\/events.json?key=YA5ic0spiVXTxapK&amp;secret=250T7JCp9KMi8IU7jZpv0SUiNSbl3B66&amp;id=177534",
+                "scheduled": "22:15",
+                "ft_score": "",
+                "league_name": "Primera Division:: clausura",
+                "location": "Estadio Jes\u00fas Berm\u00fadez",
+                "ht_score": "1 - 2",
+                "competition_name": "Primera Division",
+                "league_id": 379,
+                "added": "2019-12-18 22:00:03",
+                "home_id": 1293,
+                "home_name": "San Jose",
+                "score": "2 - 3",
+                "id": 177534,
+                "et_score": "",
+                "time": "79",
+                "competition_id": 52,
+                "away_name": "Always Ready",
+                "fixture_id": 0,
+                "last_changed": "2019-12-18 23:57:02",
+                "away_id": 4005,
+                "outcomes": {
+                    "half_time": "2",
+                    "full_time": null,
+                    "extra_time": null
+                }
+            }
         ]
     }
 }

@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/index.css">
 </head>
 
-<body onload="getJsonAjax()">
+<body onload="getJsonAjax(); getJsonAjax2();">
 	<header>
 
 		<nav>
@@ -68,28 +68,28 @@
 			<h2 id="results">Fixtures & Results</h2>
 			<table id="table-results">
 				<tr>
+					<td class="resultsCell"></td>
+					<td id="matchInfo1"></td>
+					<td class="resultsCell"></td>
+				</tr>
+				<tr>
 					<td></td>
-					<td></td>
+					<td id="matchInfo2"></td>
 					<td></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
+					<td id="matchInfo3"></td>
 					<td></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td></td>
+					<td id="matchInfo4"></td>
 					<td></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td></td>
+					<td id="matchInfo5"></td>
 					<td></td>
 				</tr>
 			</table>
@@ -97,7 +97,7 @@
 
 		<div id="leaderboards">
 			<h2 id="headers-after-news">Leaderboards</h2>
-			<p class="league-name">&lt; Premier League &gt;</p>
+			<p class="league-name">Premier League</p>
 			<table id="table-leaderboards">
 				<tr>
 					<th class="number">#</th>
@@ -108,47 +108,46 @@
 				</tr>
 				<tr>
 					<td class="number">1</td>
-					<td class="team-name">Liverpool</td>
-					<td>13</td>
-					<td>19</td>
-					<td>37</td>
+					<td class="team-name"></td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
 					<td class="number">2</td>
-					<td class="team-name">Liverpool</td>
-					<td>13</td>
-					<td>19</td>
-					<td>37</td>
+					<td class="team-name"></td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
 					<td class="number">3</td>
-					<td class="team-name">Liverpool</td>
-					<td>13</td>
-					<td>19</td>
-					<td>37</td>
+					<td class="team-name"></td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
 					<td class="number">4</td>
-					<td class="team-name">Liverpool</td>
-					<td>13</td>
-					<td>19</td>
-					<td>37</td>
+					<td class="team-name"></td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 			</table>
 		</div>
 		<br>
 	</main>
 
-	<footer>
-		<h2 id="links">Links</h2>
-		<div id="div-footer">
-			<img src="img/social-networks.png" alt="social networks"  >
+		<footer>
+			<h2 id="links">Links</h2>
+			<div id="div-footer">
+				<img src="img/social-networks.png" alt="social networks"  >
 			</div>
-			<br>
+				<br>
 	</footer>
-	<button onclick="topFunction()" id="scrollToTop" title="Go to top">To Top</button>
-
-	<script src="js/index.js"></script>
+				<button onclick="topFunction()" id="scrollToTop" title="Go to top">To Top</button>
+				<script src="js/index.js"></script>
 </body>
 
 </html>

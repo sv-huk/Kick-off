@@ -149,15 +149,24 @@ table, th {
 }
  td {
   border: 1px solid #bae8e8;
-  /* width: 410px; */
+   /* width: 410px;  */
 }
 td+td {
   width: auto;
 } 
 
+#matchInfo1, #matchInfo2, #matchInfo3, #matchInfo4, #matchInfo5{
+    text-decoration:underline; 
+    cursor:pointer;
+}
+
 #table-results{
     padding: 5px;
     font-size: 1.5rem;
+}
+
+#table-leaderboards, .league-name{
+    font-size:1.5rem
 }
 
 #scrollToTop{
@@ -224,7 +233,7 @@ td+td {
     border: 1px solid #bae8e8;
     color:#bae8e8;
 }
-    main td {
+    main .resultsCell {
     border: 1px solid #bae8e8;
     width: 410px;
 }
