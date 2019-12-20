@@ -98,12 +98,12 @@ main  .news-text-with-photo .news-text-with-photo-block img{
 }
 
 main .news-text-with-photo{
-        color:#bae8e8;
-        text-align: center;
-        font-size: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap:100px;
+    color:#bae8e8;
+    text-align: center;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:100px;
 }
 
 main .news-list {
@@ -149,7 +149,6 @@ table, th {
 }
  td {
   border: 1px solid #bae8e8;
-   /* width: 410px;  */
 }
 td+td {
   width: auto;
@@ -201,7 +200,7 @@ td+td {
         grid-template-columns: 1fr 1fr;
         grid-gap: 5px;
     }
-
+    
      main .news-text-with-photo{
         display: grid;
         grid-template-columns: 1fr;

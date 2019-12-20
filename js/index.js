@@ -36,6 +36,7 @@ function getJsonAjax() {
     xhr.open('GET', 'live-scores.json', true);
     xhr.send();
 }
+
 function getJsonAjax2() {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
